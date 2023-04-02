@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --color-general: #E81D66;
+    --color-secundario: #051130;
+    --color-letras: #ffffff;
+
+}
+
+/* -------------------------------------area dela barra de navegacion----------------------------------- */
+
+header a{  
+    color: #ffffff;
+    text-decoration: none;
+}
+header nav{
+    display: flex;
+    gap: 40px;
+}
+header{
+    background-color:#E81D66;
+    padding: 3vh 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.searchs{  
+    background-color: #051130;
+    border-radius: 40px;
+    display: flex; 
+    padding: 1vh 1vw;
+    width: 15vw;  
+}
+
+.searchbar {
+    background:#051130;
+    display: flex;
+    width: 15vw;
+}
+
+.searchbar input{  
+    background: transparent;
+    flex: 1;
+    border: 0;
+    align-items: center;
+    display: flex;
+    outline: none;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+::placeholder{
+    color: #ffffff;
+}
+
+.searchbar button img{
+    width: 20px;
+}
+
+.searchbar button{
+    border: 0;
+    border-radius: 30px;
+    background: #051130;
+}
+
+header nav .iconsbar button{
+    border: 0;
+    border-radius: 30px;
+    background:#E81D66;
+}
+
+header nav .iconsbar2 button{
+    border: 0;
+    border-radius: 30px;
+    background:#E81D66;
+}
+
+/* -------------------------------------area central de las promociones de producto superior----------------------------------- */
+
+main .sectorpromo{
+    background-color:#E81D66;    
+    padding: 6vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgpro img{
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------------------area central de las promociones de productosssssss----------------------------------- */
+.sectort{
+    background-color: white;
+    padding-top: 6vh;
+    height: auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items: end;
+}
+
+.sectortitulo{
+    background-color:#051130;
+    width: 400px;
+    color: white;
+    margin-left: 55px;
+}
+
+.sectorpromo2{
+    background-color:white;    
+    padding: 6vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgpro2 img{
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------------------area central de las promociones de producto inferior----------------------------------- */
+.sectort2{
+    background-color: white;
+    padding-top: 2vh;
+    height: auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items: end;
+}
+
+.sectortitulo2{
+    background-color:#051130;
+    width: 400px;
+    color: white;
+    margin-left: 55px;
+}
+
+.areanovedades{
+    background-color:white;    
+    padding: 6vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgnovedades img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------------------------------------area formularios decontactos----------------------------------- */
+
+footer .sectorcontact{
+    background-color:#051130;
+}
+
+.sectorcontactos{
+    background-color:#051130;
+    width: 400px;
+    height: auto;
+    color: white;
+    display: flex;
+    margin-left: 55px;
+}
+
+/* --------------------------------------------------------------formularios contactanos!!!!!!!!!-------------- */
+
+
+.formcontac{
+    background-color:#E81D66;
+    min-height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6vh 4vw;
+    gap: 4vh;
+}
+
+.sectiona{
+    width: 100%;
+    gap: 10vw;
+    display: flex;
+    font-size: 12px;
+}
+.sectiona input{
+    background-color: #051130;
+    border:none;
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+
+}
+.sectionb{
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+}
+
+.sectionb textarea{
+    background-color: #051130;
+    border:none;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+
+}
+
+.sectionc{
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+}
+
+.btn-enviar{
+    padding: 10px;
+    background-color:#051130;
+    border-radius: 5px;
+    color: white;  
+    border:solid rgb(33, 33, 33) 1px;
+    width: 170px;
+    font-size: 18px;
+}
