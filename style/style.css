@@ -175,6 +175,7 @@ footer .sectorcontact{
 .formcontac{
     background-color:#E81D66;
     min-height: 40vh;
+    height: 500px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -231,4 +232,9 @@ footer .sectorcontact{
     border:solid rgb(33, 33, 33) 1px;
     width: 170px;
     font-size: 18px;
+
+}
+
+p{
+    color: #ffffff;
 }
