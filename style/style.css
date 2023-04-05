@@ -1,190 +1,384 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
-}
-:root{
-    --color-general: #E81D66;
-    --color-secundario: #051130;
-    --color-letras: #ffffff;
-
-}
-
-/* -------------------------------------area dela barra de navegacion----------------------------------- */
-
-header a{  
-    color: #ffffff;
-    text-decoration: none;
-}
-header nav{
-    display: flex;
-    gap: 40px;
+    box-sizing: border-box;  
 }
 header{
-    background-color:#E81D66;
-    padding: 3vh 1vw;
+    width: 100%;
+    background: #E81D66;
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
 }
 
-.searchs{  
+#btnmenu{
+    display: none;
+    /* justify-content: flex-end; */
+}
+/* ------------------logoprincipal---- */
+
+
+.logopaginaprincipal ul{
+    background-color: #E81D66;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+/* .logopaginaprincipal li{
+    border-right: 1px solid rgb(0, 0, 0);
+} */
+
+.logopaginaprincipal li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border:solid 2px white;
+    border-radius: 25px;
+    font-size: 10px;
+}
+/* ----------------------------------------------------------- */
+header label{
+    display: none;
+    width: 22px;
+    height: 52px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #E81D66;
+}
+
+
+header label:hover{
+    cursor: pointer;
+    background:  #fc518f;
+}
+
+/* --------------------------------navegadorr-------- */
+
+.menu ul{
+    background-color: #E81D66;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+/* .menu li{
+    border-right: 1px solid rgb(3, 3, 3);
+} */
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* -----------------buscador------------- */
+
+
+#btnsearch{
+    display: block;
+}
+
+
+
+.search form{
     background-color: #051130;
-    border-radius: 40px;
-    display: flex; 
-    padding: 1vh 1vw;
-    width: 15vw;  
-}
-
-.searchbar {
-    background:#051130;
+    margin: 2px;
+    list-style: none;
+    padding: 1px 1px;
     display: flex;
-    width: 15vw;
+    border:solid #051130;
+    border-radius: 25px;
 }
 
-.searchbar input{  
+/* .search{
+    border-right: 1px solid rgb(3, 3, 3);
+} */
+
+.search input{
     background: transparent;
     flex: 1;
     border: 0;
-    align-items: center;
     display: flex;
     outline: none;
-    font-size: 10px;
+    font-size: 12px;
     color: #ffffff;
 }
 
-::placeholder{
-    color: #ffffff;
+.search a img{
+    width: 18px;
+    height: 18px;
 }
 
-.searchbar button img{
-    width: 20px;
-}
+/* -------------iconos de la pagina---------- */
 
-.searchbar button{
-    border: 0;
-    border-radius: 30px;
-    background: #051130;
-}
-
-header nav .iconsbar button{
-    border: 0;
-    border-radius: 30px;
-    background:#E81D66;
-}
-
-header nav .iconsbar2 button{
-    border: 0;
-    border-radius: 30px;
-    background:#E81D66;
-}
-
-/* -------------------------------------area central de las promociones de producto superior----------------------------------- */
-
-main .sectorpromo{
-    background-color:#E81D66;    
-    padding: 6vh 2vw;
+.iconosusarios ul{
+    background-color: #E81D66;
+    margin: 0;
+    list-style: none;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.imgpro img{
-    width: 100%;
-    height: 100%;
+/* .iconosusarios li{
+    border-right: 1px solid rgb(3, 3, 3);
+} */
+
+.iconosusarios li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
 }
-/* -------------------------------------area central de las promociones de productosssssss----------------------------------- */
+
+/* ----------web movil----- */
+@media (max-width: 768px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position:absolute;
+        width: 40%;
+        margin-left: -70%;
+        bottom: 158px;
+    }
+
+    .menu ul{
+        flex-direction:column; 
+    }
+
+    #btnmenu:checked ~ .menu {
+        margin: 0;
+    }
+}
+
+/* ----main--- seccion central*/
+
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color:#ffffff;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+
 .sectort{
-    background-color: white;
-    padding-top: 6vh;
-    height: auto;
-    display: flex;
-    justify-content:flex-start;
-    align-items: end;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+
 }
 
 .sectortitulo{
     background-color:#051130;
-    width: 400px;
+    width: 25%;
     color: white;
-    margin-left: 55px;
+    text-align: center;
 }
 
-.sectorpromo2{
-    background-color:white;    
-    padding: 6vh 2vw;
+
+
+/* --------------------slader-promociones----- */
+
+
+.promociones{
+    padding: 15px;
+    background: #E81D66;
+}
+
+/* marco imagen */
+.contenedorslider{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    /* caja sombreado */
+    box-shadow: 0 0 0 10px #E81D66,0 5px 20px;
+    position: relative;
+}
+
+
+.slider{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 400px;
+    width: 400%;
+    margin-left: -100%;
 }
 
-.imgpro2 img{
+
+.slider__section{
+    width: 100%;
+}  
+
+.slider img{
+    display: block;
     width: 100%;
     height: 100%;
 }
-/* -------------------------------------area central de las promociones de producto inferior----------------------------------- */
-.sectort2{
-    background-color: white;
-    padding-top: 2vh;
-    height: auto;
+
+
+/* botones deslizar imagenes */
+.sliderboton{
+    position: absolute;
+    width: 29px;
+    height: 44px;
+    background: white;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    /* bordes */
+    border-radius: 30%;
+    cursor: pointer;
+    box-shadow: 0 0 0 10px #E81D66,0 5px 20px;
+}
+
+.sliderboton:hover{
+/* --- */
+}
+
+.sliderleft{
+    left: 0px;
+
+}
+
+.sliderright{
+    right: 0px;
+}
+/* ---------------------------------------------- */
+
+
+/* --------------------slader-descuento del mes----- */
+
+/* marco imagen */
+.contenedorslider2{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    /* caja sombreado */
+    box-shadow: 0 0 0 10px #051130,0 5px 20px;
+    position: relative;
+}
+
+
+.slider2{
     display: flex;
-    justify-content:flex-start;
-    align-items: end;
+    height: 400px;
+    width: 400%;
+    margin-left: -100%;
 }
 
-.sectortitulo2{
-    background-color:#051130;
-    width: 400px;
-    color: white;
-    margin-left: 55px;
-}
+.slider__section2{
+    width: 100%;
+}  
 
-.areanovedades{
-    background-color:white;    
-    padding: 6vh 2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imgnovedades img{
+.slider2 img{
+    display: block;
     width: 100%;
     height: 100%;
 }
 
 
-/* -------------------------------------area formularios decontactos----------------------------------- */
+/* botones deslizar imagenes */
+.sliderboton2{
+    position: absolute;
+    width: 29px;
+    height: 44px;
+    background: white;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    /* bordes */
+    border-radius: 30%;
+    cursor: pointer;
+    box-shadow: 0 0 0 10px #051130,0 5px 20px;
+}
 
-footer .sectorcontact{
-    background-color:#051130;
+.sliderboton2:hover{
+/* --- */
+}
+
+.sliderleft2{
+    left: 0px;
+
+}
+
+.sliderright2{
+    right: 0px;
+}
+
+
+/* ----------------------------seccion catalogo---------------- */
+
+
+
+.contenedorcatalogo{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+}
+.card{
+    background-color:white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0 0 0 10px #fffafa,0 5px 20px;
+}
+.card:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+p{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* -------contactanos---------- */
+
+.sectorcontact{
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #051130;
 }
 
 .sectorcontactos{
     background-color:#051130;
-    width: 400px;
-    height: auto;
+    width: 25%;
     color: white;
-    display: flex;
-    margin-left: 55px;
+    text-align: center;
 }
 
-/* --------------------------------------------------------------formularios contactanos!!!!!!!!!-------------- */
 
-
-.formcontac{
-    background-color:#E81D66;
-    min-height: 40vh;
-    height: 500px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6vh 4vw;
-    gap: 4vh;
-}
-
+/* --formularios....-.-..- */
 .sectiona{
     width: 100%;
     gap: 10vw;
@@ -215,8 +409,8 @@ footer .sectorcontact{
     font-size: 18px;
     color: white;
     outline: none;
-
 }
+
 
 .sectionc{
     width: 100%;
@@ -226,15 +420,38 @@ footer .sectorcontact{
 
 .btn-enviar{
     padding: 10px;
-    background-color:#051130;
+    background-color: #051130;
     border-radius: 5px;
-    color: white;  
-    border:solid rgb(33, 33, 33) 1px;
+    color: white;
+    border: solid rgb(33, 33, 33) 1px;
     width: 170px;
     font-size: 18px;
-
 }
 
-p{
-    color: #ffffff;
+.formcontac{
+    background-color:#E81D66;
+    min-height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6vh 4vw;
+    gap: 4vh;
+}
+
+/* 
+----margen final---- */
+
+.copyright{
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #051130;
+}
+
+.copyright p{
+    background: #051130;
+    display: flex;
+    justify-content: center;
+    color: white;
 }

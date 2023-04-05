@@ -9,89 +9,129 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href=""><h2>El Bazar de Pepe</h2></a>
-        </nav>
-        <nav></i>
-            <a href="">Inicio</a>
-            <a href="">Productos</a>
-            <a href="">Contacto</a>
-            <a href="">Pregunstas Frecuentes</a>
-            <a href="">Politica de Devolucion</a>
-        </nav>
-        <div class="searchs">
-            <form action="" class="searchbar">
-                <input type="text" name="search" placeholder="Buscar..." > 
-                <button type="submit"><img src="img/🦆 icon _magnifying glass bold_.png"></button> 
-            </form>
-        </div>
-        <nav>
-            <div class="iconsbar">
-            <a href=""><button><img src="img/🦆 icon _user key bold_.png"></button></a>
-            </div> 
-            <div class="iconsbar2">
-            <a href=""><button><img src="img/🦆 icon _shop cart bold_.png"></button></a>
-            </div>          
-            <a href="">$ 0,00</a>
-        </nav>
-    </header>
-    <main>
-        <div class="sectorpromo">
-            <div class="imgpromo"><img src="img/1.png"></div>
-        </div>
-        <div class="sectort">
-            <h2 class="sectortitulo">Ofertas del Mes</h2>
-        </div>
-        <div class="sectorpromo2">            
-            <div class="imgpromo2"><img src="img/2.png"></div>
-        </div>
-        <div class="sectort2">
-            <h2 class="sectortitulo2">Novedades</h2>
-        </div>
-        <div class="areanovedades">
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-        </div>
-        <div class="areanovedades">
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-        </div>
-        
-        <div class="areanovedades">
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-        </div>
-        
-        <div class="areanovedades">
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-            <div class="imgnovedades"><img src="img/3.png"></div>
-        </div>
-    </main>
-    <footer>
-        <div class="sectorcontact">
-            <h2 class="sectorcontactos">Contactános</h2>
-        </div>
-        <form id="formcontac" class="formcontac">
-            <div class="sectiona">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                <input type="text" id="correo" name="correo" placeholder="Correo" required>
+        <!-- .-------------logo principal---------- -->
+                <input type="checkbox" id="btnmenu" class="btnmenu">
+                    <label for="btnmenu" ><img src="img/🦆 icon _user key bold_.png" alt=""></label>
+                <div class="logopaginaprincipal">
+                        <ul>
+                            <li><a href=""><h2>El Bazar de Pepe Argento</h2></a></li>
+                        </ul>
+                </div> 
+        <!-- ---------------------nav a ---------------           -->
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Productos</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Pregunstas Frecuentes</a></li>
+                        <li><a href="">Politica de Devolucion</a></li>
+                    </ul>
+                </div>
+        <!-- ----------  buscador------------ -->
+                <div class="search">
+                    <form action="">
+                        <input type="text" name="search" placeholder="Buscar...">
+                        <a href=""><img for="btnsearch" src="img/🦆 icon _magnifying glass bold_.png"></a>
+                        </input>
+                    </form>
+                </div>
+        <!-- 
+        ---------------------------iconos acessos usuario----------- -->
+                <div class="iconosusarios">
+                    <ul>
+                        <li><a href=""><img for="btnsearch" src="img/🦆 icon _user key bold_.png"></a></li>
+                        <li><a href=""><img for="btnsearch" src="img/🦆 icon _shop cart bold_.png"></a></li>
+                        <li><a href="">$0,00</a></li>
+                    </ul>
+                </div>
+            </header>
+
+
+
+<main>
+    <!-- banner de promociones -->
+<div class="promociones">
+    <div class="contenedorslider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="https://www.delbazar.com/wp-content/uploads/2023/03/10-off-con-transferencia-1024x475.jpg" alt="" class="sliderimg">
             </div>
-            <div class="sectionb">
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <div class="slider__section">
+                <img src="https://www.delbazar.com/wp-content/uploads/2023/03/envio-a-todo-el-pais-3-cuotas-sin-interes-1024x475.jpg" alt="" class="sliderimg">
             </div>
-            <div class="sectionc">
-                <input type="submit" value="Enviar" class="btn-enviar"/>
+            <div class="slider__section">
+                <img src="https://www.delbazar.com/wp-content/uploads/2023/03/decora-tu-casa.jpg" alt="" class="sliderimg">
             </div>
-            <p>Comision 170 Grupo 10 Argentina Programa 2023 ®Todos los derechos reservados</p>
-        </form>
-    </footer>
+            <div class="slider__section">
+                <img src="https://www.delbazar.com/wp-content/uploads/2023/03/elegi-vajilla.jpg" alt="" class="sliderimg">
+            </div>
+        </div>      
+        <div class="sliderboton sliderright" id="btn-right"><img src="img/Arrow---Right-Square2.svg" alt=""></div>
+        <div class="sliderboton sliderleft" id="btn-left"><img src="img/Arrow---Left-Square2.svg" alt=""></div>
+    </div>
+    <script src="js/script.js"></script>
+</div>
+    <!-- --------------------- -->
+<!-- descuentos del mess -->
+    <div class="sectort">
+        <h2 class="sectortitulo">Ofertas del Mes</h2>
+    </div>
+    <div class="contenedorslider2">
+        <div class="slider2" id="slider2">
+            <div class="slider__section2">
+                <img src="img/ofertas1.png" alt="" class="sliderimg2">
+            </div>
+            <div class="slider__section2">
+                <img src="img/ofertas2.png" alt="" class="sliderimg2">
+            </div>
+            <div class="slider__section2">
+                <img src="img/ofertas3.png" alt="" class="sliderimg2">
+            </div>
+            <div class="slider__section2">
+                <img src="img/ofertas4.png" alt="" class="sliderimg2">
+            </div>
+        </div>      
+        <div class="sliderboton2 sliderright2" id="btn-right2"><img src="img/Arrow---Right-Square.svg" alt=""></div>
+        <div class="sliderboton2 sliderleft2" id="btn-left2"><img src="img/Arrow---Left-Square.svg" alt=""></div>
+    </div>
+    <script src="js/script2.js"></script>
+<!-- ------------------///////////////////////------------------------------------ -->
+
+<div class="sectort">
+    <h2 class="sectortitulo">Novedades</h2>
+</div>
+
+
+<div id="contenedorcatalogo" class="contenedorcatalogo"></div>
+    <script src="js/listacatalogo.js"></script>
+
+<!-- -----------------------contactanos.....----------- -->
+<div class="sectorcontact">
+    <h2 class="sectorcontactos">Contactános</h2>
+</div>
+
+<form id="formcontac" class="formcontac">
+    <div class="sectiona">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        <input type="text" id="correo" name="correo" placeholder="Correo" required>
+    </div>
+    <div class="sectionb">
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+    </div>
+    <div class="sectionc">
+        <input type="submit" value="Enviar" class="btn-enviar"> 
+    </div>
+</form>
+</main>
+<!-- ------margen final--- -->
+<footer>
+    <div class="copyright">
+    <p>Todos los derechos reservados por 3z3k31l</p>
+    </div>
+</footer>
+
+
+
 </body>
+
 </html>
