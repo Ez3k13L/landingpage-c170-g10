@@ -7,6 +7,8 @@ header{
     width: 100%;
     background: #E81D66;
     display: flex;
+    justify-content: space-between;
+    height: 100px;
 }
 
 #btnmenu{
@@ -35,7 +37,7 @@ header{
     color: white;
     border:solid 2px white;
     border-radius: 25px;
-    font-size: 10px;
+    font-size: 12px;
 }
 /* ----------------------------------------------------------- */
 header label{
@@ -72,6 +74,7 @@ header label:hover{
     padding: 10px;
     text-decoration: none;
     color: white;
+    font-size: 18px;
 }
 
 
@@ -104,7 +107,7 @@ header label:hover{
     border: 0;
     display: flex;
     outline: none;
-    font-size: 12px;
+    font-size: 16px;
     color: #ffffff;
 }
 
@@ -123,9 +126,6 @@ header label:hover{
     display: flex;
 }
 
-/* .iconosusarios li{
-    border-right: 1px solid rgb(3, 3, 3);
-} */
 
 .iconosusarios li a{
     display: block;
@@ -182,6 +182,8 @@ body{
     width: 25%;
     color: white;
     text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -192,6 +194,9 @@ body{
 .promociones{
     padding: 15px;
     background: #E81D66;
+    height: 450px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /* marco imagen */
@@ -201,8 +206,9 @@ body{
     margin: auto;
     overflow: hidden;
     /* caja sombreado */
-    box-shadow: 0 0 0 10px #E81D66,0 5px 20px;
+    box-shadow: 0 0 0 20px #ca024ca2,0 10px 30px;
     position: relative;
+    border:solid 2px #ca024b3a;
 }
 
 
@@ -218,7 +224,7 @@ body{
     width: 100%;
 }  
 
-.slider img{
+.slider i{
     display: block;
     width: 100%;
     height: 100%;
@@ -365,9 +371,8 @@ p{
 /* -------contactanos---------- */
 
 .sectorcontact{
-    margin-top: 0;
-    margin-bottom: 0;
-    background: #051130;
+    padding: 4px;
+    background-color:#051130;
 }
 
 .sectorcontactos{
@@ -379,65 +384,135 @@ p{
 
 
 /* --formularios....-.-..- */
-.sectiona{
+
+
+.contenedorformulario{
     width: 100%;
-    gap: 10vw;
+    height: 100%;
+    background-color: #E81D66;
     display: flex;
-    font-size: 12px;
+    justify-content: center;
 }
-.sectiona input{
-    background-color: #051130;
-    border:none;
-    width: 80%;
-    padding: 10px;
-    font-size: 18px;
-    color: white;
-    outline: none;
-
-}
-.sectionb{
-    width: 100%;
+.cajita{
+    width: 1200px;
+    height: 600px;
     display: flex;
-    font-size: 12px;
-}
-
-.sectionb textarea{
-    background-color: #051130;
-    border:none;
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    color: white;
-    outline: none;
-}
-
-
-.sectionc{
-    width: 100%;
-    display: flex;
-    font-size: 12px;
-}
-
-.btn-enviar{
-    padding: 10px;
-    background-color: #051130;
-    border-radius: 5px;
-    color: white;
-    border: solid rgb(33, 33, 33) 1px;
-    width: 170px;
-    font-size: 18px;
-}
-
-.formcontac{
-    background-color:#E81D66;
-    min-height: 40vh;
-    display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 6vh 4vw;
-    gap: 4vh;
+}
+
+.formularios{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+}
+.formularios i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
+}
+.formularios input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #051130;
+    border-radius: 40px;
+    color: #ffffff;
+}
+.formularios input::placeholder{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.cajamensaje{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.cajamensaje i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.cajamensaje textarea{
+    background-color: #051130;
+    border-radius: 40px;
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+.cajamensaje textarea::placeholder{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.boton input{
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #051130;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.mensajes{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.mensajes .exitoso{
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+    background-color: green;
+    border-radius: 10px;
+}
+.mensajes .fallido{
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+    background-color: red;
+    border-radius: 10px;
+}
+@keyframes boton{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 /* 

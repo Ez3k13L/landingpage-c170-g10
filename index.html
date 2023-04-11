@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
                 <div class="search">
                     <form action="">
                         <input type="text" name="search" placeholder="Buscar...">
-                        <a href=""><img for="btnsearch" src="img/🦆 icon _magnifying glass bold_.png"></a>
+                        <a href=""><img for="btnsearch" src="img/🦆 icon _magnifying glass bold_.svg"></a>
                         </input>
                     </form>
                 </div>
@@ -39,15 +40,12 @@
         ---------------------------iconos acessos usuario----------- -->
                 <div class="iconosusarios">
                     <ul>
-                        <li><a href=""><img for="btnsearch" src="img/🦆 icon _user key bold_.png"></a></li>
-                        <li><a href=""><img for="btnsearch" src="img/🦆 icon _shop cart bold_.png"></a></li>
+                        <li><a href=""><img for="btnsearch" src="img/🦆 icon _user key bold_.svg"></a></li>
+                        <li><a href=""><img for="btnsearch" src="img/🦆 icon _shop cart bold_.svg"></a></li>
                         <li><a href="">$0,00</a></li>
                     </ul>
                 </div>
             </header>
-
-
-
 <main>
     <!-- banner de promociones -->
 <div class="promociones">
@@ -107,21 +105,37 @@
 
 <!-- -----------------------contactanos.....----------- -->
 <div class="sectorcontact">
-    <h2 class="sectorcontactos">Contactános</h2>
+    <h2 class="sectorcontactos">Contactanos</h2>
 </div>
 
-<form id="formcontac" class="formcontac">
-    <div class="sectiona">
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-        <input type="text" id="correo" name="correo" placeholder="Correo" required>
+
+
+<div class="contenedorformulario">
+    <form id="formularioUsuarios" class="cajita">
+        <div class="formularios">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nombre" id="nombre" required>
+        </div>
+        <div class="formularios">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" id="email" required>
+        </div>
+        <div class="cajamensaje">
+            <textarea id="msg" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+        </div>
+        <div class="boton">
+            <input type="submit" value="Enviar" class="btn-enviar"/>
+        </div>
+        <div class="mensajes">
+        <div class="exitoso" id="exitoso">Tu mensaje fue enviado con exito!</div>
+        <!-- falta reglar -->
+        <div class="fallido" id="fallido">Falta completar campos!</div>
     </div>
-    <div class="sectionb">
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-    </div>
-    <div class="sectionc">
-        <input type="submit" value="Enviar" class="btn-enviar"> 
-    </div>
-</form>
+    </form>
+</div>
+
+
+<script src="js/validacion.js"></script>
 </main>
 <!-- ------margen final--- -->
 <footer>
